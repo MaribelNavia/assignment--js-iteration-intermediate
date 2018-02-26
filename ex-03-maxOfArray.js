@@ -5,6 +5,16 @@
  * numbers as an argument and finds the highest number.
  *
 **/
+function maxOfArray(numbers){
+  let number = 0
+  for(let i = 0; i < numbers.length; i++){
+    // console.log("i: " + i + " number: " + number + " numbers[i]: " + numbers[i])
+    if(numbers[i] > number){
+      number = numbers[i]
+    } 
+  }
+  return number
+}
 
 
 console.group('JS Iterations Week');

@@ -4,7 +4,16 @@
  *  Write a function called sumPositives that takes an array of numbers and
  *  only adds the positive numbers
  *
-*/
+*/  function sumPositives(list){
+    let positives = 0;
+    for (let i = 0; i < list.length; i++){
+      if (list[i] >= 0){
+         positives += list[i];
+      } 
+    }
+    return positives; 
+    }
+
 
 console.group('JS Iterations Week');
   console.log('%cFunction: sumPositives', 'background-color: green; color: white')

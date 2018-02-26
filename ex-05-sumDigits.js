@@ -10,6 +10,15 @@
  *    sumDigits(1112) => 5
  *    sumDigits(406) => 10
  **/
+ function sumDigits(digits){
+  let sum = 0
+  digits = digits.toString()
+  for(let i = 0; i < digits.length; i++){
+    sum += parseInt(digits[i])
+    // console.log("sum = " + sum + " digits[i] = " + digits[i]) 
+  }
+  return sum 
+ }
 
 console.group('JS Iterations Week');
   console.log('%cFunction: sumDigits', 'background-color: green; color: white')

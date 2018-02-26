@@ -17,6 +17,15 @@
  *      => false // the double-letters have to be next to eachother
 **/
 
+  function hasDoubleLetters(letters){
+    for (let i = 0; i < letters.length; i++){
+      if (i > 0 && letters[i].toLowerCase() === letters[i-1].toLowerCase())
+        // console.log(letters[i] + " es igual a: " + letters[i-1])
+        return true
+    }
+    return false
+  }
+
 console.group('JS Iterations Week');
   console.log('Function: hasDoubleLetters', 'background-color: green; color: white')
   console.groupCollapsed('Should return true for "shutter"');
